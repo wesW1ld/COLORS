@@ -1,0 +1,23 @@
+@startuml
+class User {
+    - username: String
+    - password: String
+    + login(login: String, password: String): UserInfo
+}
+
+class ColorList {
+    - colors: List<String>
+    + addColor(color: String, userId: String): String
+    + searchColor(query: String): List<String>
+}
+
+class UserInfo {
+    - id: int
+    - firstName: String
+    - lastName: String
+}
+
+' Relationships
+User --> ColorList : owns
+User --> UserInfo : returns
+@enduml

@@ -1,0 +1,25 @@
+@startuml
+start
+
+:Display login screen;
+
+while (Login successful?) is (no)
+    :Show login error;
+endwhile (yes)
+
+    while (User Exited?) is (no)
+        :User chooses action;
+
+        if (Action) then (Add Color)
+            :Call /add-color API;
+        else (Search Color)
+            :Call /search-color API;
+        endif
+
+        :Return to main menu;
+    endwhile (yes)
+
+    stop
+
+stop
+@enduml

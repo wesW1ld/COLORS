@@ -1,0 +1,35 @@
+@startuml
+left to right direction
+
+actor User
+
+rectangle "Color Website" {
+
+    usecase "Login" as UC_Login
+    usecase "Add Color" as UC_AddColor
+    usecase "Search Color" as UC_SearchColor
+
+    rectangle "System / API" {
+        usecase "/login" as API_Login
+        usecase "/add-color" as API_Add
+        usecase "/search-color" as API_Search
+    }
+}
+
+' User can only login directly
+User --> UC_Login
+
+' Add and Search depend on login
+UC_AddColor .> UC_Login : <<include>>
+UC_SearchColor .> UC_Login : <<include>>
+
+' User triggers Add and Search after login
+User --> UC_AddColor
+User --> UC_SearchColor
+
+' Map use cases to API endpoints
+UC_Login --> API_Login
+UC_AddColor --> API_Add
+UC_SearchColor --> API_Search
+
+@enduml
