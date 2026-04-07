@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/wesW1ld/COLORS/issues"
   },
-  "homepage": "https://github.com/wesW1ld/COLORS#readme"
+  "homepage": "https://github.com/wesW1ld/COLORS#readme",
+  "devDependencies": {
+    "eslint": "^10.2.0",
+    "htmlhint": "^1.9.2",
+    "stylelint": "^17.6.0",
+    "stylelint-config-standard": "^40.0.0"
+  }
 }
