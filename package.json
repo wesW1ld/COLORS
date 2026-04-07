@@ -1,0 +1,24 @@
+{
+  "name": "colors",
+  "version": "1.0.0",
+  "description": "The COLORS application is a website where the user can login and add colors to their database and search for those colors later, even after logging out or closing the tab.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wesW1ld/COLORS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/wesW1ld/COLORS/issues"
+  },
+  "homepage": "https://github.com/wesW1ld/COLORS#readme"
+}
