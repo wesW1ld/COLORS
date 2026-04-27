@@ -1,4 +1,4 @@
-/* exported doLogin, readCookie, doLogout, addColor, searchColor */
+/* eslint no-unused-vars: "off" */
 
 const urlBase = 'http://wesleywild.xyz/LAMPAPI';
 const extension = 'php';
