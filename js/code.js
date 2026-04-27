@@ -46,7 +46,7 @@ function doLogin()
 				firstName = jsonObject.firstName;
 				lastName = jsonObject.lastName;
 
-				saveCookie();
+				saveCookie(firstName, lastName, userId);
 	
 				window.location.href = "color.html";
 			}
@@ -60,7 +60,7 @@ function doLogin()
 
 }
 
-function saveCookie()
+function saveCookie(firstName, lastName, userId)
 {
 	let minutes = 20;
 	let date = new Date();
@@ -185,3 +185,7 @@ function searchColor()
 	}
 	
 }
+
+module.exports = {
+  saveCookie
+};
